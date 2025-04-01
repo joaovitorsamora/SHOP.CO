@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../product-details.css">
+    <title>SHOP.CO | Your Fashion Destination</title>
+    <script src="../js/productDetails.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <aside class="header__promo-banner">
+            Sign up and get 20% off to your first order. <a href="#" class="header__promo-link">Sign Up Now</a>
+        </aside>
+        <section class="header__main">
+            <div class="header__menu-wrapper">
+                <button class="header__menu-button" aria-label="Abrir o Menu"><img src="../assets/menu-icon.png"></button>
+                <h1 class="header__logo-text">SHOP.CO</h1>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Shop</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">On Sale</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">New Arrivals</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Brands</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <input type="text" class="header__search" placeholder="Search for products">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="pesquisa-icon" src="../assets/pesquisa-icon.png"></a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="shop-icon" src="../assets/shop-icon.png"></a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="profile-icon" src="../assets/profile-icon.png"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="main">
+        <section class="product">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Men</a></li>
+                </ul>
+              </nav>
+            <article class="featured__new-arrivals-product" id="data-product-details">
+                <!-- <div class="featured__new-arrivals-product-images">
+                    <img class="featured__new-arrivals-product-image featured__product1" src="../assets/camisa-verde-escura.png" alt="product1">
+                    <img class="featured__new-arrivals-product-image featured__product2"" src="../assets/image 2.png" alt="product2">
+                    <img class="featured__new-arrivals-product-image featured__product3"" src="../assets/image 5.png" alt="product3">
+                    <img class="featured__new-arrivals-product-image featured__product4"" src="../assets/image 6.png" alt="product4">
+                </div>
+                <div class="featured__new-arrivals-product-details">
+                    <h4 class="featured__new-arrivals-product-title">CHECKERED SHIRT</h4>
+                    <div class="featured__new-arrivals-product-review" role="img" aria-label="Avaliação: 3.5 de 5 estrelas">
+                        <img src="../assets/Stars2.png" alt="Stars1" aria-hidden="true"> 
+                        <p class="featured__new-arrivals-product-reviewstars">4.5/5</p>
+                    </div>
+                    <div class="featured__new-arrivals-product-price-wrapper">
+                        <p class="featured__new-arrivals-product-price">$180</p>
+                        <p class="featured__new-arrivals-product-price-promotion">$300</p>
+                        <p class="featured__new-arrivals-product-price-discount">-40%</p>
+                    </div> 
+                    <p class="featured__new-arrivals-product-description">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>   
+                    <div class="horizontal__line"></div>
+                    <section class="selected__color">
+                        <h3 class="selected__color-title">Select Colors</h3>
+                        <div class="selected__color-wrapper">
+                            <div class="elipse-first"></div>
+                            <div class="elipse-second" ></div>
+                            <div class="elipse-third"></div>
+                        </div>
+                    </section>
+                    <div class="horizontal__line"></div>
+                    <section class="selected__size">
+                        <h3 class="selected__size-title">Choose Size</h3>
+                        <div class="selected__size-wrapper">
+                            <button class="selected__size-button">Small</button>
+                            <button class="selected__size-button">Medium</button>
+                            <button class="selected__size-button">Large</button>
+                            <button class="selected__size-button">X-Large</button>
+                        </div>
+                    </section>
+                    <div class="horizontal__line"></div>
+                    <section class="selected__quantity">
+                        <div class="selected__quantity-wrapper">
+                            <div class="selected__quantity-buttons">
+                                <button class="selected__quantity-button"><img src="../assets/menos.png"></button>
+                                <input type="text" class="selected__quantity-input" value="1">
+                                <button class="selected__quantity-button"><img src="../assets/mais.png"></button>
+                            </div>
+                            <button class="selected__quantity-add-to-cart">Add to Cart</button>
+                        </div>
+                    </section>
+                </div> -->
+            </article>
+        </section>
+        <section class="product-details">
+            <div class="product-details__tabs">
+                <h3 class="product-details__text">Product Details</h3>
+                <h3 class="product-details__text">Rating & Reviews</h3>
+                <h3 class="product-details__text">FAQs</h3>
+            </div>
+        </section>
+        <div class="horizontal__line"></div>
+        <div class="review__section">
+            <div class="review__section-all-reviews">
+                <h3 class="review__section-all-reviews-title">All Reviews</h3>
+                <p class="review__section-all-reviews-text">(451)</p>
+            </div>
+            <div class="review__section-write-review">
+                <img src="../assets/icone-filter.png" alt="Stars3" class="review__section-write-review-icon">
+                <button class="latest__button latest__button-hidden">Latest</button>
+                <button class="review__button">Write a Review</button>
+            </div>
+        </div>
+        <section class="testimonials">
+            <div class="testimonials__carousel">
+                <div class="testimonials__cards">
+                    <div class="testimonials__card">
+                        <img src="../assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Sarah M.</h3>
+                            <img src="../assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="../assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Samantha D.</h3>
+                            <img src="../assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="../assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Ethan R.</h3>
+                            <img src="../assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="../assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Liam K.</h3>
+                            <img src="../assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="../assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Alex M.</h3>
+                            <img src="../assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="../assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Olivia P.</h3>
+                            <img src="../assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="../assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Ava H.</h3>
+                            <img src="../assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."</blockquote>
+                    </div>
+                </div>    
+            </div>
+            
+        </section>
+        <section class="featured__top-selling">
+            <h3 class="featured__top-selling-title">
+                You might also like
+            </h3>
+            <div class="featured__top-selling-products ">
+                <article class="featured__top-selling-product featured__top-selling-product--middle-child-hidden">
+                    <img class="featured__top-selling-product-image" src="../assets/polo-azul.png" alt="product4">
+                    <h4 class="featured__top-selling-product-title">Polo with Contrast Trims</h4>
+                    <div class="featured__top-selling-product-review" role="img" aria-label="Avaliação: 5.0 de 5 estrelas">
+                        <img src="../assets/Stars3.png" alt="Stars3" aria-hidden="true"> 
+                        <p class="featured__top-selling-product-reviewstars">5.0/5</p>
+                    </div>
+                    <div class="featured__new-arrivals-product-price-wrapper">
+                        <p class="featured__new-arrivals-product-price">$212</p>
+                        <p class="featured__new-arrivals-product-price-promotion">$242</p>
+                        <p class="featured__new-arrivals-product-price-discount">-20%</p>
+                    </div> 
+                </article>
+                <article class="featured__top-selling-product featured__top-selling-product--middle-child-hidden">
+                    <img class="featured__top-selling-product-image" src="../assets/gradient-tshirt.png" alt="product5">
+                    <h4 class="featured__top-selling-product-title">Gradient Graphic T-short</h4>
+                    <div class="featured__top-selling-product-review" role="img" aria-label="Avaliação: 4.0 de 5 estrelas">
+                        <img src="../assets/Stars4.png" alt="Stars4" aria-hidden="true"> 
+                        <p class="featured__top-selling-product-reviewstars">4.0/5</p>
+                    </div>    
+                    <p class="featured__top-selling-product-price">$145</p>
+                </article>
+                <article class="featured__top-selling-product">
+                    <img class="featured__top-selling-product-image" src="../assets/polo-azul-clara-desktop.png" alt="product4">
+                    <h4 class="featured__top-selling-product-title">Polo with Contrast Trims</h4>
+                    <div class="featured__top-selling-product-review" role="img" aria-label="Avaliação: 5.0 de 5 estrelas">
+                        <img src="../assets/Stars3.png" alt="Stars3" aria-hidden="true"> 
+                        <p class="featured__top-selling-product-reviewstars">5.0/5</p>
+                    </div>
+                    <div class="featured__new-arrivals-product-price-wrapper">
+                        <p class="featured__new-arrivals-product-price">$212</p>
+                        <p class="featured__new-arrivals-product-price-promotion">$242</p>
+                        <p class="featured__new-arrivals-product-price-discount">-20%</p>
+                    </div> 
+                </article>
+                <article class="featured__top-selling-product">
+                    <img class="featured__top-selling-product-image" src="../assets/gradient-tshirt-desktop.png" alt="product5">
+                    <h4 class="featured__top-selling-product-title">Gradient Graphic T-short</h4>
+                    <div class="featured__top-selling-product-review" role="img" aria-label="Avaliação: 4.0 de 5 estrelas">
+                        <img src="../assets/Stars4.png" alt="Stars4" aria-hidden="true"> 
+                        <p class="featured__top-selling-product-reviewstars">4.0/5</p>
+                    </div>    
+                    <p class="featured__top-selling-product-price">$145</p>
+                </article>
+                <article class="featured__top-selling-product">
+                    <img class="featured__top-selling-product-image" src="../assets/polo-marrom-desktop.png" alt="product5">
+                    <h4 class="featured__top-selling-product-title">Polo with Tipping Details</h4>
+                    <div class="featured__top-selling-product-review" role="img" aria-label="Avaliação: 4.0 de 5 estrelas">
+                        <img src="../assets/Stars4.png" alt="Stars4" aria-hidden="true"> 
+                        <p class="featured__top-selling-product-reviewstars">4.0/5</p>
+                    </div>    
+                    <p class="featured__top-selling-product-price">$180</p>
+                </article>
+                <article class="featured__top-selling-product">
+                    <img class="featured__top-selling-product-image" src="../assets/polo-branco&preto-desktop.png" alt="product4">
+                    <h4 class="featured__top-selling-product-title">Black Striped T-shirt</h4>
+                    <div class="featured__top-selling-product-review" role="img" aria-label="Avaliação: 5.0 de 5 estrelas">
+                        <img src="../assets/Stars3.png" alt="Stars3" aria-hidden="true"> 
+                        <p class="featured__top-selling-product-reviewstars">5.0/5</p>
+                    </div>
+                    <div class="featured__new-arrivals-product-price-wrapper">
+                        <p class="featured__new-arrivals-product-price">$120</p>
+                        <p class="featured__new-arrivals-product-price-promotion">$150</p>
+                        <p class="featured__new-arrivals-product-price-discount">-30%</p>
+                    </div> 
+                </article>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="newsletter__content">
+                <h2 class="newsletter__title">
+                    STAY UPTO DATE ABOUT OUR LATEST OFFERS
+                </h2>
+                <form class="newsletter__form">
+                    <label class="newsletter__form-label" for="email">Subscribe to our newsletter</label>
+                    <input class="newsletter__form-input" type="email" id="email" placeholder="Enter your email address">
+                    <button class="newsletter__form-button">Subscribe to Newsletter</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__logo">
+                <h2 class="footer__logo-title">SHOP.CO</h2>
+                <p class="footer__logo-description">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                <ul class="footer__social">
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://x.com"><img src="../assets/twitter.png" alt="twitter"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com/?locale=pt_BR"><img src="../assets/facebook.png" alt="facebook"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://www.instagram.com"><img src="../assets/instagram.png" alt="instagram"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://github.com"><img src="../assets/github.png" alt="github"></a></li>
+                </ul>
+            </div>
+            <section class="footer__links footer__item2">
+                <div class="footer__links-column">
+                    <h3 class="footer__links-title">COMPANY</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">About Us</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Services</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Policy</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                    </ul>    
+                </div>
+                <div>
+                    <h3 class="footer__links-title">F.A.Q</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">Account</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Menage Deliveries</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Orders</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Payment</a></li>
+                    </ul>    
+                </div>
+            </section>
+            <section class="footer__links footer__item3">
+                <div class="footer__links-column">
+                    <h3 class="footer__links-title">HELP</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">Customer Support </a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Delivery Details</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </ul>    
+                </div>
+                <div>
+                    <h3 class="footer__links-title">RESOURCES</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">Free eBook</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Development Tutorial</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">How to - Blog</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Youtube Playlist</a></li>
+                    </ul>    
+                </div>
+            </section>
+            <div class="footer__bottom">
+                <p class="reserved-text">© 2000-2021, All rights reserved</p>
+                <div class="footer__payment">
+                    <img src="../assets/visa-icon.png" alt="credit cards visa">
+                    <img src="../assets/mastercard-icon.png" alt="credit cards mastercard">
+                    <img src="../assets/paypal-icon.png" alt="paypal">
+                    <img src="../assets/applepay-icon.png" alt="apple pay">
+                    <img src="../assets/googlepay-icon.png" alt="google pay">
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
