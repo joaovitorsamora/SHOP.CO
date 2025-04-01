@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/fetchAPI.js" defer></script>
+    <script src="./js/showProducts.js" defer></script>
+    <script src="./js/topSellingFiltered.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <title>SHOP.CO | Your Fashion Destination</title>
+</head>
+<body>
+    <header class="header">
+        <aside class="header__promo-banner">
+            Sign up and get 20% off to your first order. <a href="#" class="header__promo-link">Sign Up Now</a>
+        </aside>
+        <section class="header__main">
+            <div class="header__menu-wrapper">
+                <button class="header__menu-button" aria-label="Abrir o Menu"><img src="assets/menu-icon.png"></button>
+                <h1 class="header__logo-text">SHOP.CO</h1>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Shop</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">On Sale</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">New Arrivals</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Brands</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <input type="text" class="header__search" placeholder="Search for products">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="pesquisa-icon" src="assets/pesquisa-icon.png"></a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="shop-icon" src="assets/shop-icon.png"></a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="profile-icon" src="assets/profile-icon.png"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__text">
+                <h1 class="hero__text-title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <p class="hero__text-description">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            </div>
+            <div class="hero__button">
+                <a class="hero__button-link" href="#">Shop Now</a>
+            </div>
+            <ul class="hero__stats">
+                <li class="hero__stats-item">
+                    <h2 class="hero__stats-text">200+</h2>
+                    <p class="hero__stats-description">International Brands</p>
+                </li>
+                <li class="hero__stats-divider hero__stats-divider-none"></li>
+                <li class="hero__stats-item">
+                    <h2 class="hero__stats-text">2,000+</h2>
+                    <p class="hero__stats-description">High-Quality Products</p>
+                </li>
+                  
+                <li class="hero__stats-item hero__stats-item--full">
+                    <h2 class="hero__stats-text">30,000+</h2>
+                    <p class="hero__stats-description">Happy Customers</p>
+                </li>
+            </ul>
+            <div class="hero__image">
+                <img src="assets/banner-hero.png" alt="Mulher usando roupa casual">
+            </div>
+            <ul class="hero__brands">
+                <li class="hero__brands-item">
+                    <img src="assets/versace-logo.png" alt="Logo da Versace">
+                </li>
+                <li class="hero__brands-item">
+                    <img src="assets/zara-logo.png" alt="Logo da Zara">
+                </li>
+                <li class="hero__brands-item">
+                    <img src="assets/gucci-logo.png" alt="Logo da Gucci">
+                </li>
+                <li class="hero__brands-item">
+                    <img src="assets/prada-logo.png" alt="Logo da Prada">
+                </li>
+                <li class="hero__brands-item">
+                    <img src="assets/calvin-klein-logo.png" alt="Logo da Calvin Klein">
+                </li>           
+            </ul>
+        </section>
+        <section class="featured__new-arrivals">
+            <div class="featured__new-arrivals-text">
+                <h2 class="featured__new-arrivals-text-title">NEW ARRIVALS</h2>
+            </div>
+            <ul class="container__products" id="products-arrivals">
+                <li class="item__container-products">   
+                </li>
+            </ul>
+            <button class="featured__new-arrivals-button">View All</button>
+        </section>
+        <section class="featured__top-selling">
+            <div class="featured__top-selling-text">
+                <h2 class="featured__top-selling-text-title">TOP SELLING</h2>
+            </div>
+            <ul class="container__products" id="products-top-selling">
+                <li class="item__container-products">
+                </li>
+            </ul>
+            <button class="featured__top-selling-button">View All</button>
+        </section>
+        <section class="dress-styles">
+            <h2 class="dress-styles__title">BROWSE BY dress STYLE</h2>
+            <div class="dress-styles__flex">
+                <figure class="dress-styles__card dress-styles__card--casual">
+                    <a href="./pages/category-page.html">
+                        <img src="assets/Casual.png" alt="Homem usando roupa casual" class="dress-styles__image">
+                    </a>
+                    <a href="./pages/category-page.html">
+                        <img src="assets/casual-desktop.png" alt="Homem usando roupa casual" class="dress-styles__image-desktop">
+                    </a>
+                    <figcaption class="dress-styles__caption">Casual</figcaption>
+                </figure>
+                <figure class="dress-styles__card dress-styles__card--formal"> 
+                    <a href="#">
+                        <img src="assets/Formal.png" alt="Homem usando roupa formal" class="dress-styles__image">
+                    </a>
+                    <a href="#">
+                        <img src="assets/formal-desktop.png" alt="Homem usando roupa formal" class="dress-styles__image-desktop">
+                    </a>
+                    <figcaption class="dress-styles__caption">Formal</figcaption>
+                </figure>
+                <figure class="dress-styles__card dress-styles__card--party">
+                    <a>
+                        <img src="assets/Party.png" alt="Mulher usando roupa para festa" class="dress-styles__image">
+                    </a>
+                    <a>
+                        <img src="assets/party-desktop.png" alt="Mulher usando roupa para festa" class="dress-styles__image-desktop">
+                    </a>
+                    <figcaption class="dress-styles__caption">Party</figcaption>
+                </figure>
+                <figure class="dress-styles__card dress-styles__card--gym dress-styles__card--last-child">
+                    <a href="#">
+                        <img src="assets/Gym.png" alt="Homem usando roupa para academia" class="dress-styles__image">
+                    </a>
+                    <a href="#">
+                        <img src="assets/gym-desktop.png" alt="Homem usando roupa de academia" class="dress-styles__image-desktop">
+                    </a>
+                    <figcaption class="dress-styles__caption">Gym</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="testimonials__header">
+                <h2 class="testimonials__title">OUR HAPPY CUSTOMERS</h2>
+                <div class="testimonials__buttons">
+                    <button class="button__arrow-left"><img src="assets/arrow-left.png" alt="arrow-left"></button>
+                    <button class="button__arrow-right"><img src="assets/arrow-right.png" alt="arrow-right"></button>
+                </div>
+            </div>
+            <div class="testimonials__carousel">
+                <div class="testimonials__cards">
+                    <div class="testimonials__card">
+                        <img src="assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Sarah M.</h3>
+                            <img src="assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Samantha D.</h3>
+                            <img src="assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Ethan R.</h3>
+                            <img src="assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Liam K.</h3>
+                            <img src="assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Alex M.</h3>
+                            <img src="assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Olivia P.</h3>
+                            <img src="assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</blockquote>
+                    </div>
+                    <div class="testimonials__card testimonials__card--hidden">
+                        <img src="assets/Stars3.png" alt="Stars3">
+                        <div class="testimonials__card-header">
+                            <h3 class="testimonials__card-name">Ava H.</h3>
+                            <img src="assets/verification.png" alt="verification icon" class="testimonials__card-verification">
+                        </div>
+                        <blockquote class="testimonials__card-quote">"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."</blockquote>
+                    </div>
+                </div>    
+            </div>
+            
+        </section>
+        <section class="newsletter">
+            <div class="newsletter__content">
+                <h2 class="newsletter__title">
+                    STAY UPTO DATE ABOUT OUR LATEST OFFERS
+                </h2>
+                <form class="newsletter__form">
+                    <label class="newsletter__form-label" for="email">Subscribe to our newsletter</label>
+                    <input class="newsletter__form-input" type="email" id="email" placeholder="Enter your email address">
+                    <button class="newsletter__form-button">Subscribe to Newsletter</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__logo">
+                <h2 class="footer__logo-title">SHOP.CO</h2>
+                <p class="footer__logo-description">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                <ul class="footer__social">
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://x.com"><img src="assets/twitter.png" alt="twitter"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com/?locale=pt_BR"><img src="assets/facebook.png" alt="facebook"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://www.instagram.com"><img src="assets/instagram.png" alt="instagram"></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link" href="https://github.com"><img src="assets/github.png" alt="github"></a></li>
+                </ul>
+            </div>
+            <section class="footer__links footer__item2">
+                <div class="footer__links-column">
+                    <h3 class="footer__links-title">COMPANY</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">About Us</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Services</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Policy</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                    </ul>    
+                </div>
+                <div>
+                    <h3 class="footer__links-title">F.A.Q</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">Account</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Menage Deliveries</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Orders</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Payment</a></li>
+                    </ul>    
+                </div>
+            </section>
+            <section class="footer__links footer__item3">
+                <div class="footer__links-column">
+                    <h3 class="footer__links-title">HELP</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">Customer Support </a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Delivery Details</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </ul>    
+                </div>
+                <div>
+                    <h3 class="footer__links-title">RESOURCES</h3>
+                    <ul class="footer__links-list">
+                        <li class="footer__links-item"><a href="#" class="footer__link">Free eBook</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Development Tutorial</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">How to - Blog</a></li>
+                        <li class="footer__links-item"><a href="#" class="footer__link">Youtube Playlist</a></li>
+                    </ul>    
+                </div>
+            </section>
+            <div class="footer__bottom">
+                <p class="reserved-text">© 2000-2021, All rights reserved</p>
+                <div class="footer__payment">
+                    <img src="assets/visa-icon.png" alt="credit cards visa">
+                    <img src="assets/mastercard-icon.png" alt="credit cards mastercard">
+                    <img src="assets/paypal-icon.png" alt="paypal">
+                    <img src="assets/applepay-icon.png" alt="apple pay">
+                    <img src="assets/googlepay-icon.png" alt="google pay">
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
