@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../category-page.css">
+    <link rel="stylesheet" href="../reset.css">
+    <script src="../js/fetchAPI.js" defer></script>
+    <script src="../js/showCategoryProducts.js" defer></script>
+    <script src="../js/category-product-filter.js" defer></script>
+    <title>SHOP.CO | Your Fashion Destination</title>
+</head>
+<body>
+    <header class="header">
+        <aside class="header__promo-banner">
+            Sign up and get 20% off to your first order. <a href="#" class="header__promo-link">Sign Up Now</a>
+        </aside>
+        <section class="header__main">
+            <div class="header__menu-wrapper">
+                <button class="header__menu-button" aria-label="Abrir o Menu"><img src="../assets/menu-icon.png"></button>
+                <a href="../index.html" class="header__logo-text">SHOP.CO</a>
+                <nav class="header__menu">
+                    <ul class="header__menu-list" aria-label="Main navigation">
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Shop</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">On Sale</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">New Arrivals</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Brands</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <input type="text" class="header__search" placeholder="Search for products">
+            <nav class="header__nav" aria-label="User navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="pesquisa-icon" src="../assets/pesquisa-icon.png"></a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="shop-icon" src="../assets/shop-icon.png"></a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#"><img class="profile-icon" src="../assets/profile-icon.png"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section>
+        <div class="product__image-wrapper">
+            <a href="../index.html" class="product__image-link">Home > <a href="./category-page.html" class="strong-word">Casual</a></a>
+        </div>
+        <div class="product__filter">
+            <h2 class="product__filter-title">
+                Casual
+            </h2>
+            <p class="product__filter-counter">
+                Showing 1-10 of 100 Products
+            </p>
+            <button class="product__filter-button" onclick="openNav()"></button>
+            <div id="filter-menu" class="product__filter-menu-wrapper">
+                <div class="product__filter-menu">
+                    <p class="product__filter-text">Filter</p>
+                    <a class="btn-close" onclick="closeNav()">X</a>
+                </div>
+                
+                <section class="product__filter-list">
+                    <div class="product__filter-divider">
+                        <li class="product__filter-item"><a class="product__filter-link" href="#">T-shirts</a></li>
+                        <li class="product__filter-item"><a class="product__filter-link" href="#">Shorts</a></li>
+                        <li class="product__filter-item"><a class="product__filter-link" href="#">Shirts</a></li>
+                        <li class="product__filter-item"><a class="product__filter-link" href="#">Hoodie</a></li>
+                        <li class="product__filter-item"><a class="product__filter-link" href="#">Jeans</a></li>
+                    </div>
+
+                    <label class="product__filter-title-price">Price</label>
+                    <div class="range-container">
+                        <div class="range-slider-container">
+                            <div class="range-track"></div>
+                            <input type="range" id="min-price" class="range-slider" min="0" max="1000" value="200">
+                            <input type="range" id="max-price" class="range-slider" min="0" max="1000" value="800">
+                        </div>
+                        <div class="price-values">
+                            <span id="min-value">200</span>
+                            <span id="max-value">800</span>
+                        </div>
+                    </div>
+
+                    <label class="product__filter-title-colors">Colors</label>
+                        <div class="color-options">
+                            <div class="color-circle green" data-color="green">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle red" data-color="red">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle yellow" data-color="yellow">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle orange" data-color="orange">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle cyan selected" data-color="cyan">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle purple" data-color="purple">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle pink" data-color="pink">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle white" data-color="white">
+                                <span class="check-icon">✔</span>
+                            </div>
+                            <div class="color-circle black" data-color="black">
+                                <span class="check-icon">✔</span>
+                            </div>
+                        </div>
+
+                    <label class="product__filter-title-size">Size</label>
+                        <div class="size-options">
+                            <div class="size-track xxs">XX-Small</div>
+                            <div class="size-track xs">X-Small</div>
+                            <div class="size-track s">Small</div>
+                            <div class="size-track m">Medium</div>
+                            <div class="size-track l">Large</div>
+                            <div class="size-track xl">X-Large</div>
+                            <div class="size-track xxl">XX-Large</div>
+                            <div class="size-track xxxl">3X-Large</div>
+                            <div class="size-track xxxxl">4X-Large</div>
+                        </div>
+                    <label class="product__filter-title-dress-style">Dress Style</label>        
+                    <div class="dress-style-options">
+                        <li class="dress-style-item"><a class="dress-style-link" href="#">Casual</a></li>
+                        <li class="dress-style-item"><a class="dress-style-link" href="#">Formal</a></li>
+                        <li class="dress-style-item"><a class="dress-style-link" href="#">Party</a></li>
+                        <li class="dress-style-item"><a class="dress-style-link" href="#">Gym</a></li>
+                    </div>
+                    
+                    <button class="product__filter-apply-button">Apply</button>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="category-products__container">
+        <div class="featured__category-products" id="category-product">
+            <li class="item__container-products">   
+            </li>
+            <!-- <article class="featured__new-arrivals-product">
+                <img class="featured__new-arrivals-product-image" src="../assets/Camisa-preta.png" alt="product1">
+                <h4 class="featured__new-arrivals-product-title">T-SHIRT WITH TAPE DETAILS</h4>
+                <div class="featured__new-arrivals-product-review" role="img" aria-label="Avaliação: 4.5 de 5 estrelas">
+                    <img src="../assets/Stars1.png" alt="Stars1" aria-hidden="true"> 
+                    <p class="featured__new-arrivals-product-reviewstars">4.5/5</p>
+                </div>
+                <p class="featured__new-arrivals-product-price">$120</p>
+            </article>
+            <article class="featured__new-arrivals-product featured__new-arrivals-product--middle-child-hidden">
+                <img class="featured__new-arrivals-product-image" src="../assets/Calça-jeans.png" alt="product2">
+                <h4 class="featured__new-arrivals-product-title">SKINNY FIT JEANS</h4>
+                <div class="featured__new-arrivals-product-review" role="img" aria-label="Avaliação: 3.5 de 5 estrelas">
+                    <img src="../assets/Stars2.png" alt="Stars1" aria-hidden="true"> 
+                    <p class="featured__new-arrivals-product-reviewstars">3.5/5</p>
+                </div>    
+                <p class="featured__new-arrivals-product-price">$240</p>
+            </article>
+            <article class="featured__new-arrivals-product">
+                <img class="featured__new-arrivals-product-image" src="../assets/calça-jeans-desktop.png" alt="product2">
+                <h4 class="featured__new-arrivals-product-title">SKINNY FIT JEANS</h4>
+                <div class="featured__new-arrivals-product-review" role="img" aria-label="Avaliação: 3.5 de 5 estrelas">
+                    <img src="../assets/Stars2.png" alt="Stars1" aria-hidden="true"> 
+                    <p class="featured__new-arrivals-product-reviewstars">3.5/5</p>
+                </div>    
+                <p class="featured__new-arrivals-product-price">$240</p>
+            </article>
+            <article class="featured__new-arrivals-product">
+                <img class="featured__new-arrivals-product-image" src="../assets/camisa-xadreza.png" alt="product2">
+                <h4 class="featured__new-arrivals-product-title">CHECKERED SHIRT</h4>
+                <div class="featured__new-arrivals-product-review" role="img" aria-label="Avaliação: 3.5 de 5 estrelas">
+                    <img src="../assets/Stars2.png" alt="Stars1" aria-hidden="true"> 
+                    <p class="featured__new-arrivals-product-reviewstars">4.5/5</p>
+                </div>    
+                <p class="featured__new-arrivals-product-price">$180</p>
+            </article>
+            <article class="featured__new-arrivals-product">
+                <img class="featured__new-arrivals-product-image" src="../assets/camisa-laranja&preta.png" alt="product3">
+                <h4 class="featured__new-arrivals-product-title">SLEEVE STRIPED T-SHIRT</h4>
+                <div class="featured__new-arrivals-product-review" role="img" aria-label="Avaliação: 4.5 de 5 estrelas">
+                    <img src="../assets/Stars4.png" alt="Stars1" aria-hidden="true"> 
+                    <p class="featured__new-arrivals-product-reviewstars">4.5/5</p>
+                </div>
+                <p class="featured__new-arrivals-product-price">$130</p>
+            </article> -->
+        </div>
+    </section>
+    <div class="pagination">
+        <button class="pagination__button previous-button">Previous</button>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <button class="pagination__button next-button">Next</button>
+      </div>
+    <section class="newsletter">
+        <div class="newsletter__content">
+            <h2 class="newsletter__title">
+                STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            </h2>
+            <form class="newsletter__form">
+                <label class="newsletter__form-label" for="email">Subscribe to our newsletter</label>
+                <input class="newsletter__form-input" type="email" id="email" placeholder="Enter your email address">
+                <button class="newsletter__form-button">Subscribe to Newsletter</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__logo">
+            <h2 class="footer__logo-title">SHOP.CO</h2>
+            <p class="footer__logo-description">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+            <ul class="footer__social">
+                <li class="footer__social-item"><a class="footer__social-link" href="https://x.com"><img src="../assets/twitter.png" alt="twitter"></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="https://www.facebook.com/?locale=pt_BR"><img src="../assets/facebook.png" alt="facebook"></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="https://www.instagram.com"><img src="../assets/instagram.png" alt="instagram"></a></li>
+                <li class="footer__social-item"><a class="footer__social-link" href="https://github.com"><img src="../assets/github.png" alt="github"></a></li>
+            </ul>
+        </div>
+        <section class="footer__links footer__item2">
+            <div class="footer__links-column">
+                <h3 class="footer__links-title">COMPANY</h3>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="#" class="footer__link">About Us</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Services</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Policy</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                </ul>    
+            </div>
+            <div>
+                <h3 class="footer__links-title">F.A.Q</h3>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="#" class="footer__link">Account</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Menage Deliveries</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Orders</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Payment</a></li>
+                </ul>    
+            </div>
+        </section>
+        <section class="footer__links footer__item3">
+            <div class="footer__links-column">
+                <h3 class="footer__links-title">HELP</h3>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="#" class="footer__link">Customer Support </a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Delivery Details</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                </ul>    
+            </div>
+            <div>
+                <h3 class="footer__links-title">RESOURCES</h3>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="#" class="footer__link">Free eBook</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Development Tutorial</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">How to - Blog</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Youtube Playlist</a></li>
+                </ul>    
+            </div>
+        </section>
+        <div class="footer__bottom">
+            <p class="reserved-text">© 2000-2021, All rights reserved</p>
+            <div class="footer__payment">
+                <img src="../assets/visa-icon.png" alt="credit cards visa">
+                <img src="../assets/mastercard-icon.png" alt="credit cards mastercard">
+                <img src="../assets/paypal-icon.png" alt="paypal">
+                <img src="../assets/applepay-icon.png" alt="apple pay">
+                <img src="../assets/googlepay-icon.png" alt="google pay">
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
