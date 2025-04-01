@@ -1,0 +1,137 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imagem": ["assets/gradient-tshirt-desktop.png"],
+      "title": "Gradient Graphic T-shirt",
+      "startsReviewImage": "assets/Stars3-5.png",
+      "review": 3.5,
+      "price": 145,
+      "style": "casual",
+      "colors": ["#FF5733", "#33FF57", "#5733FF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 2,
+      "imagem": ["assets/polo-marrom-desktop.png"],
+      "title": "Polo with Tipping Details",
+      "startsReviewImage": "assets/Stars4-5.png",
+      "review": 4.5,
+      "price": 180,
+      "style": "casual",
+      "colors": ["#6F4E37", "#FFFFFF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 3,
+      "imagem": ["assets/camisa-branco&preto-desktop.png"],
+      "title": "Black Striped T-shirt",
+      "startsReviewImage": "assets/Stars5.png",
+      "review": 5.0,
+      "price": 180,
+      "discount": "-30%",
+      "oldPrice": 150,
+      "style": "casual",
+      "colors": ["#000000", "#FFFFFF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 4,
+      "imagem": ["assets/calça-jeans-desktop.png"],
+      "title": "SKINNY FIT JEANS",
+      "startsReviewImage": "assets/Stars3-5.png",
+      "review": 3.5,
+      "price": 240,
+      "discount": "-20%",
+      "oldPrice": 260,
+      "style": "casual",
+      "colors": ["#1C1C1C", "#2F4F4F"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 5,
+      "imagem": ["assets/camisa-xadreza.png"],
+      "title": "CHECKERED SHIRT",
+      "startsReviewImage": "assets/Stars4-5.png",
+      "review": 4.5,
+      "price": 180,
+      "style": "casual",
+      "colors": ["#8B0000", "#FFFFFF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 6,
+      "imagem": ["assets/camisa-laranja&preta.png"],
+      "title": "SLEEVE STRIPED T-SHIRT",
+      "startsReviewImage": "assets/Stars4-5.png",
+      "review": 4.5,
+      "price": 130,
+      "discount": "-30%",
+      "oldPrice": 160,
+      "style": "casual",
+      "colors": ["#FFA500", "#000000"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 7,
+      "imagem": ["assets/camisa-verde.png"],
+      "title": "VERTICAL STRIPED SHIRT",
+      "startsReviewImage": "assets/Stars5.png",
+      "review": 5.0,
+      "price": 212,
+      "discount": "-20%",
+      "oldPrice": 232,
+      "style": "casual",
+      "colors": ["#32CD32", "#FFFFFF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 8,
+      "imagem": ["assets/camisa-laranja-desktop.png"],
+      "title": "COURAGE GRAPHIC T-SHIRT",
+      "startsReviewImage": "assets/Stars4.png",
+      "review": 4.0,
+      "price": 145,
+      "style": "casual",
+      "colors": ["#FFA500", "#FFFFFF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 9,
+      "imagem": ["assets/short-jeans.png"],
+      "title": "LOOSE FIT BERMUDA SHORTS",
+      "startsReviewImage": "assets/Stars3-5.png",
+      "review": 3.0,
+      "price": 80,
+      "style": "casual",
+      "colors": ["#4682B4"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 10,
+      "imagem": ["assets/camisa-verde-escura.png", "assets/camisa-verde-escura2.png", "assets/camisa-verde-escura3.png", "assets/camisa-verde-escura4.png"],
+      "title": "One Life Graphic T-shirt",
+      "startsReviewImage": "assets/Stars4-5.png",
+      "review": 4.5,
+      "price": 260,
+      "discount": "-40%",
+      "oldPrice": 300,
+      "style": "casual",
+      "colors": ["#006400", "#FFFFFF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": 11,
+      "imagem": ["assets/polo-azul-clara-desktop.png"],
+      "title": "Polo with Contrast Trims",
+      "startsReviewImage": "assets/Stars4.png",
+      "review": 4.0,
+      "price": 212,
+      "discount": "-20%",
+      "oldPrice": 242,
+      "style": "casual",
+      "colors": ["#ADD8E6", "#FFFFFF"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    }
+  ]
+}
