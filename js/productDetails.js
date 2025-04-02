@@ -5,7 +5,7 @@ function getProductIdFromURL() {
 
 async function fetchProductDetails(productId) {
     try {
-        const response = await fetch(`http://localhost:3000/products/${productId}`);
+        const response = await fetch(`https://shop-co-server-three.vercel.app/products/${productId}`);
         if (!response.ok) throw new Error("Erro ao carregar detalhes do produto");
         return await response.json();
     } catch (error) {
